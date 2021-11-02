@@ -1,0 +1,58 @@
+Envoi des données de arduino vers la bdd
+
+
+Transmettre les données sur un cloud ou similaire pour que la SEMEA puisse accéder aux données
+
+Transmettre données Arduino -> BDD
+Système d'alerte par mail lorsqu'une fuite est détectée
+Système d'alerte par message lorsqu'une fuite est détectée
+Définir une fuite
+Détecter une fuite
+Revoir l'interface utilisateur (graphiques, infos)
+
+
+
+Faire résumé avancée du projet avec shcéma, screen, ...
+
+schéma cablage emetteur - recepteur
+
+
+
+Arduino Uno - 12,99 €
+Arduino Nano x3 - 13,99 € 
+Antenne NRL24F01+PA+LNA x3 - 13,99 € 
+Module RTC - 8,99 €
+Batterie - ? ~ 3 €
+
+Optocoupleur x60 - 8,50 €
+Résistance x1000 - 12,99 €
+Transistor x250 - 9,99 €
+
+---------------------------------------------------------------------------------------------------------------------------------------
+Pour 1
+---------------------------------------------------------------------------------------------------------------------------------------
+12
+4
+4,5
+9
+3
+=
+32.5
+
+
+
+Arduino emetteur - stockage de données; ne pas envoyer de donnée lorsqu'il n'y a plus de transmission radio, et envoyer les donnée lors de la reprise.
+
+
+
+Lorsqu'on arrive sur une heure pile (ex: 8h; 9h; 10h...)
+Communication radio OK ?
+Si Oui, on envoie les données
+Si Non, on stock les données dans une list, puis on boucle jusqu'à ce qu'on retrouve la communication, lors de la reprise de la communication on envoie les données stocker dans la list
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- Mail semea, protocole ?
+- Faire des tests de distance 
+- Envoyer donnée reçu vers une BDD
+- Améliorer l'UI web
